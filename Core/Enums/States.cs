@@ -1,0 +1,43 @@
+﻿namespace backend_dotnet.Core.Enums
+{
+    public enum States
+    {
+        AndamanAndNicobarIslands = 1,
+        AndhraPradesh = 2,
+        ArunachalPradesh = 3,
+        Assam = 4,
+        Bihar = 5,
+        Chandigarh = 6,
+        Chhattisgarh = 7,
+        DadraAndNagarHaveli = 8,
+        DamanAndDiu = 9,
+        Delhi = 10,
+        Goa = 11,
+        Gujarat = 12,
+        Haryana = 13,
+        HimachalPradesh = 14,
+        JammuAndKashmir = 15,
+        Jharkhand = 16,
+        Karnataka = 17,
+        Kerala = 18,
+        Ladakh = 19,
+        Lakshadweep = 20,
+        MadhyaPradesh = 21,
+        Maharashtra = 22,
+        Manipur = 23,
+        Meghalaya = 24,
+        Mizoram = 25,
+        Nagaland = 26,
+        Odisha = 27,
+        Puducherry = 28,
+        Punjab = 29,
+        Rajasthan = 30,
+        Sikkim = 31,
+        TamilNadu = 32,
+        Telangana = 33,
+        Tripura = 34,
+        UttarPradesh = 35,
+        Uttarakhand = 36,
+        WestBengal = 37
+    }
+}

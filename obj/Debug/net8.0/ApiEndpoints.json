@@ -1,0 +1,587 @@
+[
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "backend_dotnet.Core.Dtos.Auth.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Auth.LoginServiceResponceDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "Me",
+    "RelativePath": "api/Auth/me",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "backend_dotnet.Core.Dtos.Auth.MeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Auth.LoginServiceResponceDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "backend_dotnet.Core.Dtos.Auth.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "SeedRoles",
+    "RelativePath": "api/Auth/seed-roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Auth/update-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateRoleDto",
+        "Type": "backend_dotnet.Core.Dtos.Auth.UpdateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "GetUserNamesList",
+    "RelativePath": "api/Auth/usernames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "GetUsersList",
+    "RelativePath": "api/Auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Auth.UserInfoResult, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.AuthController",
+    "Method": "GetUserDetailsByUserName",
+    "RelativePath": "api/Auth/users/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Auth.UserInfoResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.BranchesController",
+    "Method": "PostBranch",
+    "RelativePath": "api/Branches/create-branch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchDto",
+        "Type": "backend_dotnet.Core.Dtos.Location.BranchCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Location.BranchGetDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.BranchesController",
+    "Method": "GetBranches",
+    "RelativePath": "api/Branches/get-allbranches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Location.BranchGetDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.BranchesController",
+    "Method": "GetBranch",
+    "RelativePath": "api/Branches/get-branches/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Location.BranchGetDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.BranchesController",
+    "Method": "UpdateBranch",
+    "RelativePath": "api/Branches/update-branch/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "branchDto",
+        "Type": "backend_dotnet.Core.Dtos.Location.BranchUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.CsvUploadController",
+    "Method": "UploadCsv",
+    "RelativePath": "api/CsvUpload/upload-csv",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.HeadOfficesController",
+    "Method": "PostHeadOffice",
+    "RelativePath": "api/HeadOffices/create-headoffice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "headOfficeDto",
+        "Type": "backend_dotnet.Core.Dtos.Location.HeadOfficeCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Location.HeadOfficeGetDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.HeadOfficesController",
+    "Method": "GetHeadOffice",
+    "RelativePath": "api/HeadOffices/get-headoffice/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend_dotnet.Core.Dtos.Location.HeadOfficeGetDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.HeadOfficesController",
+    "Method": "GetHeadOffices",
+    "RelativePath": "api/HeadOffices/get-headoffices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Location.HeadOfficeGetDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.HeadOfficesController",
+    "Method": "UpdateHeadOffice",
+    "RelativePath": "api/HeadOffices/update-headoffice/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "headOfficeDto",
+        "Type": "backend_dotnet.Core.Dtos.Location.HeadOfficeUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.LogsController",
+    "Method": "GetLogs",
+    "RelativePath": "api/Logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Log.GetLogDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.LogsController",
+    "Method": "GetMyLogs",
+    "RelativePath": "api/Logs/private",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Log.GetLogDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.MeasureController",
+    "Method": "CreateMeasure",
+    "RelativePath": "api/Measure/create-measure",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinRating",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxRating",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MeasureGroupId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.MeasureController",
+    "Method": "GetMeasures",
+    "RelativePath": "api/Measure/get-measure",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Measure.MeasureGetDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.MeasureGroupController",
+    "Method": "CreateMeasureGroup",
+    "RelativePath": "api/MeasureGroup/create-measuregroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "backend_dotnet.Core.Dtos.MeasureGroup.MeasureGroupCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.MeasureGroupController",
+    "Method": "GetMeasureGroup",
+    "RelativePath": "api/MeasureGroup/get-measuregroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.MeasureGroup.MeasureGroupGetDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.StandardController",
+    "Method": "CreateStandard",
+    "RelativePath": "api/Standard/create-standard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "backend_dotnet.Core.Dtos.Standard.StandardCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.StandardController",
+    "Method": "GetStandard",
+    "RelativePath": "api/Standard/get-standard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend_dotnet.Core.Dtos.Standard.StandardGetDto, backend-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetAdminData",
+    "RelativePath": "api/Test/get-admin-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetAuditorData",
+    "RelativePath": "api/Test/get-auditor-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetChiefAuditorData",
+    "RelativePath": "api/Test/get-chief_auditor-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetOwnerData",
+    "RelativePath": "api/Test/get-owner-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetPublicData",
+    "RelativePath": "api/Test/get-public",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend_dotnet.Controllers.TestController",
+    "Method": "GetUserData",
+    "RelativePath": "api/Test/get-user-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
